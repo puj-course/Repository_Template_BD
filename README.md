@@ -1,6 +1,6 @@
-# 📦 BD_PROYECTO — Repositorio del Equipo
+# BD_PROYECTO — Repositorio del Equipo
 
-Este repositorio será utilizado para desarrollar el proyecto entre Entrega 1 y Entrega 2 utilizando Git como herramienta de seguimiento del progreso.
+Este repositorio será utilizado para desarrollar el proyecto entre Entrega 2 y Entrega 3 utilizando Git como herramienta de seguimiento del progreso.
 
 Durante **las semanas indicadas** el equipo deberá trabajar en tareas específicas registrando su progreso mediante:
 
@@ -43,6 +43,10 @@ git checkout -b feature/nombre-tarea
 ```
 
 **2.** Realizar commits del progreso.
+```bash
+git add .
+git commit -m "Mensaje de commit"
+```
 
 **3. Subir la rama al repositorio:**
 ```bash
@@ -82,7 +86,7 @@ Esto permitirá evaluar el **progreso del equipo durante el desarrollo del proye
 
 ### ✅ Entregables
 
-#### 1. 🔍 Consultas Avanzadas
+#### 1. Consultas Avanzadas
 
 **Uso obligatorio de:**
 - JOINs múltiples
@@ -101,7 +105,7 @@ Esto permitirá evaluar el **progreso del equipo durante el desarrollo del proye
 
 ---
 
-#### 2. 🏗️ Perfección del Modelo
+#### 2. Perfección del Modelo
 
 - Modelo Lógico
 - Modelo Físico
@@ -109,7 +113,7 @@ Esto permitirá evaluar el **progreso del equipo durante el desarrollo del proye
 
 ---
 
-#### 3. 🔐 Roles y Privilegios
+#### 3. Roles y Privilegios
 
 **Definición de roles:**
 - Administrador
@@ -120,10 +124,10 @@ Esto permitirá evaluar el **progreso del equipo durante el desarrollo del proye
 
 ---
 
-#### 4. 🧪 Pruebas
+#### 4. Pruebas
 
-- ✅ Casos de prueba **exitosos** (escenarios válidos)
-- ❌ Casos de prueba **fallidos** (violaciones de reglas)
+- Casos de prueba **exitosos** (escenarios válidos)
+- Casos de prueba **fallidos** (violaciones de reglas)
 
 ---
 
@@ -162,11 +166,11 @@ Esto permitirá evaluar el **progreso del equipo durante el desarrollo del proye
 
 ---
 
-## 🗂️ ENTREGA 3 — PROPUESTA
+## 🗂️ ENTREGA 3
 
-### ✅ Todos (Requisitos Generales)
+### ✅ Entregables
 
-#### 1. 💾 Programación en Base de Datos
+#### 1. Programación en Base de Datos
 
 **Funciones — Ejemplos esperados:**
 - Cálculo automático de participación
@@ -182,30 +186,30 @@ Esto permitirá evaluar el **progreso del equipo durante el desarrollo del proye
 
 | Trigger | Descripción |
 |---------|-------------|
-| 📝 Auditoría | Modificaciones en actas/resultados |
-| 🚫 Validación de rangos | No votos negativos |
-| 🔁 Anti-duplicidad | Prevención de duplicidad de actas |
-| ⚖️ Consistencia | Votos totales vs. suma de detalle |
+| Auditoría | Modificaciones en actas/resultados |
+| Validación de rangos | No votos negativos |
+| Anti-duplicidad | Prevención de duplicidad de actas |
+| Consistencia | Votos totales vs. suma de detalle |
 
 ---
 
-#### 2. 🖥️ Aplicación Funcional (Web o Escritorio)
+#### 2. Aplicación Funcional (Web o Escritorio)
 
 **Debe permitir:**
 
-- 📁 **Administración de catálogos:**
+- **Administración de catálogos:**
   - Proceso electoral
   - Territorio
   - Puestos
   - Mesas
   - Opciones de voto (candidatos/listas)
-- 📄 **Registro** de actas y resultados
-- 📊 **Consulta** de resultados consolidados
-- 🔎 **Consulta** de incidencias y reportes
+- **Registro** de actas y resultados
+- **Consulta** de resultados consolidados
+- **Consulta** de incidencias y reportes
 
 ---
 
-#### 3. 📈 Reportes
+#### 3. Reportes
 
 - Panel de visualización con filtros
 - Resultados agregados por nivel territorial
@@ -220,21 +224,24 @@ Esto permitirá evaluar el **progreso del equipo durante el desarrollo del proye
 
 #### Semana 1 · 27 abril – 3 mayo · `[Semana 13 académica]`
 
-| # | Tarea |
-|---|-------|
-| — | _Por definir_ |
+| # | Tarea                                  |
+| - | -------------------------------------- |
+| 1 | Funciones |
+| 2 | Procedimientos almacenados |
 
 #### Semana 2 · 4–10 mayo · `[Semana 14 académica]`
 
-| # | Tarea |
-|---|-------|
-| — | _Por definir_ |
+| # | Tarea                                  |
+| - | -------------------------------------- |
+| 1 | Triggers |
+| 2 | Aplicación funcional (conexión a BD) |
 
 #### Semana 3 · 11–20 mayo · `[Semanas 15–16 académica]`
 
-| # | Tarea |
-|---|-------|
-| — | _Por definir_ |
+| # | Tarea                                  |
+| - | -------------------------------------- |
+| 1 | Desarrollo de la aplicación |
+| 2 | Reportes |
 
 ---
 
