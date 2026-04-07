@@ -245,7 +245,7 @@ Esto permitirá evaluar el **progreso del equipo durante el desarrollo del proye
 
 ---
 
-## 📁 Estructura del Proyecto
+## 📁 Estructura de Carpetas del Proyecto
 
 ```text
 BD_PROYECTO/
