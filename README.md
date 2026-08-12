@@ -1,25 +1,36 @@
 # BD_PROYECTO — Repositorio del Equipo
+## Sistema de Información para la Gestión Integral de la Copa Mundial de la FIFA
 
-Este repositorio será utilizado para desarrollar el proyecto entre Entrega 2 y Entrega 3 utilizando Git como herramienta de seguimiento del progreso.
+Este repositorio se utiliza para desarrollar el proyecto de Bases de Datos desde la Semana 3 hasta la Semana 16 del curso, cubriendo la Entrega 1, la Entrega 2 y la Entrega 3, usando Git como herramienta de seguimiento del progreso.
 
-Durante **las semanas indicadas** el equipo deberá trabajar en tareas específicas registrando su progreso mediante:
+Este README es el documento principal de lineamientos. Existen dos documentos complementarios:
 
-- commits
-- ramas
-- pull requests
-- registro semanal en el **CHANGELOG.md**
+- **README_CRONOGRAMA.md** — detalle semana a semana de entregables, nombres de archivo, contenido esperado y estructura de carpetas.
+- **README_SERVIDOR_ENTREGA1.md** — guía de conexión al servidor de base de datos dispuesto por el curso para la Entrega 1 (modelo inicial).
 
-El objetivo es que el repositorio refleje claramente **cómo evolucionó el proyecto a lo largo del tiempo**, cumpliendo con los entregables semanalmente.
+Lee los tres documentos antes de empezar a trabajar.
 
 ---
 
-## 🛠️ Metodología de Trabajo
+## Contexto académico
 
-Durante el desarrollo del proyecto se deben seguir las siguientes reglas:
+El proyecto se basa en el enunciado "Sistema de Información para la Gestión Integral de la Copa Mundial de la FIFA" (Ing. Luis Gabriel Moreno Sandoval, PhD. — Bases de Datos, PUJ). El trabajo se organiza según el siguiente cronograma académico del curso:
+
+| Entrega | Semanas académicas | Semanas de trabajo | Cierre |
+|---|---|---|---|
+| Entrega 1 | Semana 3 a Semana 7 | 5 semanas | Semana 8 |
+| Entrega 2 | Semana 9 a Semana 12 | 4 semanas | Semana 13 |
+| Entrega 3 | Semana 14 a Semana 16 | 3 semanas | Semana 17 |
+
+El detalle de qué se entrega cada semana específica está en README_CRONOGRAMA.md.
+
+---
+
+## Metodología de Trabajo
 
 ### 1. Trabajo por Ramas
 
-Cada tarea debe realizarse en **una rama diferente**.
+Cada tarea/entregable debe realizarse en una rama diferente, creada a partir de `main`.
 
 **Nombre sugerido:**
 ```
@@ -28,9 +39,10 @@ feature/<descripcion>
 
 **Ejemplos:**
 ```
-feature/consulta-votos-candidato
-feature/modelo-fisico
+feature/consultas-joins-semana1
 feature/modelo-logico
+feature/triggers-auditoria
+feature/documento-tecnico
 ```
 
 #### Flujo recomendado:
@@ -42,10 +54,10 @@ git pull
 git checkout -b feature/nombre-tarea
 ```
 
-**2.** Realizar commits del progreso.
+**2. Commits del progreso** (frecuentes, no solo uno al final de la semana)
 ```bash
 git add .
-git commit -m "Mensaje de commit"
+git commit -m "Mensaje de commit descriptivo"
 ```
 
 **3. Subir la rama al repositorio:**
@@ -53,226 +65,111 @@ git commit -m "Mensaje de commit"
 git push origin feature/nombre-tarea
 ```
 
-**4.** Crear un **Pull Request** para integrar los cambios en `main`.
+**4. Crear un Pull Request** para integrar los cambios en `main`, y fusionarlo antes del cierre de la semana correspondiente.
 
 ---
 
-### 2. Registro del Progreso
+### 2. Registro del Progreso — CHANGELOG.md
 
-Cada semana se debe actualizar el archivo:
+Cada semana (de las 12 semanas de trabajo del proyecto) se debe actualizar el archivo `CHANGELOG.md` agregando una nueva entrada, sin borrar las anteriores. Formato sugerido por semana:
+
+```markdown
+## Semana X — Entrega Y — [rango de fechas]
+
+Objetivos: metas de la semana según README_CRONOGRAMA.md
+
+Tareas realizadas: lo que se completó (con referencia a los archivos/carpetas entregados)
+
+Responsables: integrantes a cargo de cada tarea
+
+Ramas utilizadas: nombres de las ramas creadas/fusionadas esta semana
+
+Problemas: inconvenientes encontrados y cómo se resolvieron (o si siguen pendientes)
 ```
-CHANGELOG.md
+
+Este registro, junto con los commits y Pull Requests, es la evidencia principal de que todos los integrantes participaron de forma semanal.
+
+---
+
+## Ventana de tiempo válida para el aporte semanal
+
+Cada semana de trabajo del proyecto se evalúa dentro de la ventana:
+
+```
+Lunes 12:00 a.m. (00:00) — Domingo 11:59 p.m. (23:59), hora Colombia (UTC-5)
 ```
 
-En este archivo deben registrar:
-
-| Campo | Descripción |
-|-------|-------------|
-| 🎯 Objetivos | Metas de la semana |
-| ✅ Tareas realizadas | Lo que se completó |
-| 👤 Responsables | Integrantes a cargo |
-| 🌿 Ramas utilizadas | Nombres de las ramas |
-| ⚠️ Problemas | Inconvenientes encontrados |
-
-Esto permitirá evaluar el **progreso del equipo durante el desarrollo del proyecto**.
+Los commits, ramas, Pull Requests y la actualización del `CHANGELOG.md` deben quedar registrados dentro de esa ventana para contar como aporte de esa semana específica.
 
 ---
 
-# 📋 Planificación de Entregas — Proyecto Base de Datos Electoral
+## Evaluación del progreso semanal
+
+El progreso del repositorio se revisa de forma semanal, considerando la actividad registrada en el historial de Git (commits, ramas, Pull Requests), la actualización del `CHANGELOG.md`, y la revisión del contenido técnico entregado.
+
+Es indispensable seguir exactamente los nombres de archivo, extensiones y rutas indicadas en README_CRONOGRAMA.md.
+
+No seguir los nombres de archivo, formatos o ubicaciones especificadas en README_CRONOGRAMA.md baja la nota, incluso si el contenido técnico es correcto, porque dificulta tanto la revisión manual como la automática.
 
 ---
 
-## 🗂️ ENTREGA 2
+## Participación individual
 
-### ✅ Entregables
-
-#### 1. Consultas Avanzadas
-
-**Uso obligatorio de:**
-- JOINs múltiples
-- Subconsultas
-- CTE (si el motor lo permite)
-- Funciones de agregación
-
-**Agregaciones por nivel territorial:**
-- Mesa
-- Puesto
-- Municipio
-- Departamento
-- Nacional
-
-> **Mínimo 6–10 consultas orientadas a transparencia y análisis electoral.**
+Es requisito indispensable que todos los integrantes registren actividad semanal verificable en el repositorio (commits con su propio correo, contribuciones en ramas, participación en Pull Requests o registro en el CHANGELOG). Los integrantes que no demuestren avances semanales verificables no serán tenidos en cuenta en la calificación de la entrega correspondiente.
 
 ---
 
-#### 2. Perfección del Modelo
-
-- Modelo Lógico
-- Modelo Físico
-- Normalización hasta **3FN**
-
----
-
-#### 3. Roles y Privilegios
-
-**Definición de roles:**
-- Administrador
-- Analista
-- Auditor / Consulta
-
-> **Restricciones de acceso por rol.**
-
----
-
-#### 4. Pruebas
-
-- Casos de prueba **exitosos** (escenarios válidos)
-- Casos de prueba **fallidos** (violaciones de reglas)
-
----
-
-### 📅 Calendario — Entrega 2
-
-#### Semana 1 · 16–22 marzo · `[Semana 8 académica]`
-
-| # | Tarea | Notas |
-|---|-------|-------|
-| 1 | Taller de Git | ⭐ Opcional — bono |
-| 2 | Subir documentos de la 1ª entrega al repositorio | |
-| 3 | Ajustes de observaciones | |
-| 4 | Definir consultas a realizar | |
-
-#### Semana 2 · 23–29 marzo · `[Semana 9 académica]`
-
-| # | Tarea |
-|---|-------|
-| 1 | Modelo Lógico |
-| 2 | Consultas Avanzadas |
-
-#### Semana 3 · 6–12 abril · `[Semana 10 académica]`
-
-| # | Tarea |
-|---|-------|
-| 1 | Modelo Físico |
-| 2 | Definición de roles: Administrador, Analista, Auditor/Consulta |
-| 3 | Restricciones de acceso por rol |
-
-#### Semana 4 · 13–22 abril · `[Semanas 11–12 académica]`
-
-| # | Tarea |
-|---|-------|
-| 1 | Normalización hasta 3FN |
-| 2 | Pruebas |
-
----
-
-## 🗂️ ENTREGA 3
-
-### ✅ Entregables
-
-#### 1. Programación en Base de Datos
-
-**Funciones — Ejemplos esperados:**
-- Cálculo automático de participación
-- Ranking por territorio
-- Validaciones lógicas
-
-**Procedimientos Almacenados — Ejemplos esperados:**
-- Carga masiva controlada de resultados
-- Consolidación automática por nivel territorial
-- Cierre de jornada electoral
-
-**Triggers — Obligatorios:**
-
-| Trigger | Descripción |
-|---------|-------------|
-| Auditoría | Modificaciones en actas/resultados |
-| Validación de rangos | No votos negativos |
-| Anti-duplicidad | Prevención de duplicidad de actas |
-| Consistencia | Votos totales vs. suma de detalle |
-
----
-
-#### 2. Aplicación Funcional (Web o Escritorio)
-
-**Debe permitir:**
-
-- **Administración de catálogos:**
-  - Proceso electoral
-  - Territorio
-  - Puestos
-  - Mesas
-  - Opciones de voto (candidatos/listas)
-- **Registro** de actas y resultados
-- **Consulta** de resultados consolidados
-- **Consulta** de incidencias y reportes
-
----
-
-#### 3. Reportes
-
-- Panel de visualización con filtros
-- Resultados agregados por nivel territorial
-- Indicadores básicos:
-  - Participación
-  - Top candidatos
-  - Incidencias
-
----
-
-### 📅 Calendario — Entrega 3
-
-#### Semana 1 · 27 abril – 3 mayo · `[Semana 13 académica]`
-
-| # | Tarea                                  |
-| - | -------------------------------------- |
-| 1 | Funciones |
-| 2 | Procedimientos almacenados |
-
-#### Semana 2 · 4–10 mayo · `[Semana 14 académica]`
-
-| # | Tarea                                  |
-| - | -------------------------------------- |
-| 1 | Triggers |
-| 2 | Aplicación funcional (conexión a BD) |
-
-#### Semana 3 · 11–20 mayo · `[Semanas 15–16 académica]`
-
-| # | Tarea                                  |
-| - | -------------------------------------- |
-| 1 | Desarrollo de la aplicación |
-| 2 | Reportes |
-
----
-
-## 📁 Estructura de Carpetas del Proyecto
+## Estructura General de Carpetas del Proyecto
 
 ```text
 BD_PROYECTO/
 │
-├── app/                    ---> 3ra Entrega
-├── docs/                   ---> Documentos, Modelos, Imágenes
+├── app/                          ---> Entrega 3 (aplicación funcional)
+│
+├── docs/                         ---> Documentos, modelos, diagramas, diccionario de datos
+│   ├── entrega1/
+│   ├── entrega2/
+│   └── entrega3/
 │
 ├── sql/
-│   ├── consultas/
-│   ├── ddl/
-│   ├── funciones/          ---> 3ra Entrega
-│   ├── procedimientos/     ---> 3ra Entrega
-│   ├── roles/
-│   └── triggers/           ---> 3ra Entrega
+│   ├── entrega1/
+│   │   ├── consultas/
+│   │   ├── ddl/
+│   │   ├── dml/
+│   │   ├── vistas/
+│   │   ├── roles/
+│   │   └── algebra_relacional/
+│   │
+│   ├── entrega2/
+│   │   ├── consultas/
+│   │   ├── ddl/
+│   │   ├── dml/
+│   │   └── roles/
+│   │
+│   └── entrega3/
+│       ├── funciones/
+│       ├── procedimientos/
+│       └── triggers/
 │
 ├── tests/
+│   ├── entrega1/
+│   ├── entrega2/
+│   └── entrega3/
 │
 ├── .gitignore
 ├── CHANGELOG.md
-└── README.md
+├── README.md
+├── README_CRONOGRAMA.md
+└── README_SERVIDOR_ENTREGA1.md
 ```
+
+El detalle exacto de qué archivo va dentro de cada subcarpeta, semana a semana, está en README_CRONOGRAMA.md. Esa estructura es la que se debe seguir de forma precisa.
 
 ---
 
-## 💬 Contacto
+## Contacto
 
-De presentar alguna inquietud con respecto al proyecto, uso de git para este o los parámetros planteados, contactar a la monitora:
+De presentar alguna inquietud con respecto al proyecto, uso de Git para este o los parámetros planteados, contactar a la monitora:
 
-**Viviana Gómez**  
-📧 Teams o Correo: [gomezlv@javeriana.edu.co](mailto:gomezlv@javeriana.edu.co)
+**Viviana Gómez**
+Teams o Correo: [gomezlv@javeriana.edu.co](mailto:gomezlv@javeriana.edu.co)
