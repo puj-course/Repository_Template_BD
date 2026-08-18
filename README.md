@@ -1,7 +1,7 @@
 # BD_PROYECTO — Repositorio del Equipo
 ## Sistema de Información para la Gestión Integral de la Copa Mundial de la FIFA
 
-Este repositorio se utiliza para desarrollar el proyecto de Bases de Datos desde la Semana 3 hasta la Semana 16 del curso, cubriendo la Entrega 1, la Entrega 2 y la Entrega 3, usando Git como herramienta de seguimiento del progreso.
+Este repositorio se utiliza para desarrollar el proyecto de Bases de Datos desde la Semana 4 hasta la Semana 16 del curso, cubriendo la Entrega 1, la Entrega 2 y la Entrega 3, usando Git como herramienta de seguimiento del progreso.
 
 Este README es el documento principal de lineamientos. Existen dos documentos complementarios:
 
@@ -18,7 +18,7 @@ El proyecto se basa en el enunciado "Sistema de Información para la Gestión In
 
 | Entrega | Semanas académicas | Semanas de trabajo | Cierre |
 |---|---|---|---|
-| Entrega 1 | Semana 3 a Semana 7 | 5 semanas | Semana 8 |
+| Entrega 1 | Semana 4 a Semana 7 | 4 semanas | Semana 8 |
 | Entrega 2 | Semana 9 a Semana 12 | 4 semanas | Semana 13 |
 | Entrega 3 | Semana 14 a Semana 16 | 3 semanas | Semana 17 |
 
