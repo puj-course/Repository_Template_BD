@@ -21,22 +21,20 @@ Todo lo entregado en esta sección corresponde al Documento Técnico y a los scr
 
 **Entregables:**
 
-1. Configuración del repositorio: verificar acceso al servidor del curso (ver README_SERVIDOR_ENTREGA1.md) y crear la estructura de carpetas base. Rama sugerida: `feature/setup-repositorio`.
-
-2. `docs/entrega1/documento_tecnico.md`
+1. `docs/entrega1/documento_tecnico.md`
    - Sección 1: Descripción del problema y alcance del sistema, a partir del modelo inicial.
    - Sección 2: Supuestos de modelado adoptados por el equipo.
    - Sección 3: Modelo Entidad–Relación (ERD), basado en el modelo inicial (ajustes menores permitidos si se justifican).
    - Diagrama: `docs/entrega1/modelo_er_inicial.png` (o `.pdf`), referenciado desde el documento técnico.
 
-3. `sql/entrega1/consultas/semana1_joins.sql`
+2. `sql/entrega1/consultas/semana1_joins.sql`
    - Consulta 2 y Consulta 6 del listado de consultas del enunciado.
    - Cada consulta debe ir precedida de un comentario `-- Consulta N: <descripción>`.
 
-4. `sql/entrega1/consultas/semana2_agregaciones.sql`
+3. `sql/entrega1/consultas/semana2_agregaciones.sql`
    - Consultas 1, 3, 4, 5, 9, 12 y 13 del listado de consultas del enunciado.
 
-5. `CHANGELOG.md` actualizado con la entrada de la Semana 1.
+4. `CHANGELOG.md` actualizado con la entrada de la Semana 1.
 
 **Estructura de carpetas al cierre de la semana:**
 ```text
