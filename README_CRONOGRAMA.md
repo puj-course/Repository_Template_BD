@@ -1,6 +1,6 @@
 # Cronograma Detallado del Proyecto — Semana a Semana
 
-Este documento detalla, para cada una de las 12 semanas de trabajo del proyecto, los objetivos, los entregables exactos, el nombre y la ruta de cada archivo, el contenido esperado, y la estructura de carpetas resultante al cierre de esa semana. Consulta también README.md para la metodología general y los lineamientos de tiempo, y README_SERVIDOR_ENTREGA1.md para conectarte al servidor de la Entrega 1.
+Este documento detalla, para cada una de las semanas de trabajo del proyecto, los objetivos, los entregables exactos, el nombre y la ruta de cada archivo, el contenido esperado, y la estructura de carpetas resultante al cierre de esa semana. Consulta también README.md para la metodología general y los lineamientos de tiempo, y README_SERVIDOR_ENTREGA1.md para conectarte al servidor de la Entrega 1.
 
 Regla general: cada semana de trabajo va del lunes 12:00 a.m. al domingo 11:59 p.m. (hora Colombia). Todo commit, PR o actualización del CHANGELOG debe registrarse dentro de esa ventana para contar como aporte de esa semana.
 
@@ -11,13 +11,13 @@ Nota sobre el alcance del modelo: la Entrega 1 trabaja únicamente sobre el Mode
 ---
 
 ## ENTREGA 1 — Modelo Relacional, SQL e Integridad sobre el Modelo Inicial
-### Semanas académicas 3 a 7 — 5 semanas de trabajo
+### 4 semanas de trabajo (cronograma ajustado)
 
 Todo lo entregado en esta sección corresponde al Documento Técnico y a los scripts sobre el modelo inicial de 5 entidades. El documento técnico es un archivo vivo: se va completando semana a semana en el mismo archivo (`docs/entrega1/documento_tecnico.md`), no se crean documentos nuevos cada semana para las mismas secciones.
 
 ---
 
-### Semana 1 de la entrega (Semana académica 3)
+### Semana 1 de la entrega
 
 **Entregables:**
 
@@ -26,44 +26,17 @@ Todo lo entregado en esta sección corresponde al Documento Técnico y a los scr
 2. `docs/entrega1/documento_tecnico.md`
    - Sección 1: Descripción del problema y alcance del sistema, a partir del modelo inicial.
    - Sección 2: Supuestos de modelado adoptados por el equipo.
+   - Sección 3: Modelo Entidad–Relación (ERD), basado en el modelo inicial (ajustes menores permitidos si se justifican).
+   - Diagrama: `docs/entrega1/modelo_er_inicial.png` (o `.pdf`), referenciado desde el documento técnico.
 
 3. `sql/entrega1/consultas/semana1_joins.sql`
    - Consulta 2 y Consulta 6 del listado de consultas del enunciado.
    - Cada consulta debe ir precedida de un comentario `-- Consulta N: <descripción>`.
 
-4. `CHANGELOG.md` actualizado con la entrada de la Semana 1.
-
-**Estructura de carpetas al cierre de la semana:**
-```text
-docs/entrega1/
-└── documento_tecnico.md
-
-sql/entrega1/
-├── consultas/
-│   └── semana1_joins.sql
-├── ddl/
-├── dml/
-├── vistas/
-├── roles/
-└── algebra_relacional/
-
-tests/entrega1/
-```
-
----
-
-### Semana 2 de la entrega (Semana académica 4)
-
-**Entregables:**
-
-1. `sql/entrega1/consultas/semana2_agregaciones.sql`
+4. `sql/entrega1/consultas/semana2_agregaciones.sql`
    - Consultas 1, 3, 4, 5, 9, 12 y 13 del listado de consultas del enunciado.
 
-2. `docs/entrega1/documento_tecnico.md`
-   - Sección 3: Modelo Entidad–Relación (ERD), basado en el modelo inicial (ajustes menores permitidos si se justifican).
-   - Diagrama: `docs/entrega1/modelo_er_inicial.png` (o `.pdf`), referenciado desde el documento técnico.
-
-3. `CHANGELOG.md` actualizado.
+5. `CHANGELOG.md` actualizado con la entrada de la Semana 1.
 
 **Estructura de carpetas al cierre de la semana:**
 ```text
@@ -86,7 +59,7 @@ tests/entrega1/
 
 ---
 
-### Semana 3 de la entrega (Semana académica 5)
+### Semana 2 de la entrega
 
 **Entregables:**
 
@@ -132,7 +105,7 @@ tests/entrega1/
 
 ---
 
-### Semana 4 de la entrega (Semana académica 6)
+### Semana 3 de la entrega
 
 **Entregables:**
 
@@ -141,7 +114,7 @@ tests/entrega1/
    - Restricciones `CHECK` y `UNIQUE` según lo definido en el enunciado (sección 8.1.2) y las que el equipo identifique adicionalmente.
    - Índices estratégicos, cada uno con un comentario justificando por qué se creó.
 
-2. `sql/entrega1/dml/dml_ciclo_vida_partido.sql` (se actualiza el archivo de la Semana 3)
+2. `sql/entrega1/dml/dml_ciclo_vida_partido.sql` (se actualiza el archivo de la Semana 2)
    - Al menos 3 intentos de operación inválida, cada uno documentado.
    - Demostración del comportamiento `ON DELETE` en al menos 2 relaciones distintas.
    - `tests/entrega1/pruebas_dml.md` — para cada caso inválido y cada prueba de borrado, describir la operación ejecutada y el resultado obtenido.
@@ -187,7 +160,7 @@ tests/entrega1/
 
 ---
 
-### Semana 5 de la entrega (Semana académica 7)
+### Semana 4 de la entrega (cierre de Entrega 1)
 
 **Entregables:**
 
@@ -205,7 +178,7 @@ tests/entrega1/
    - Sección 5: Diccionario de datos completo — `docs/entrega1/diccionario_datos.md` (archivo separado, referenciado desde el documento técnico).
    - Revisión general de que las 5 secciones del documento estén completas y coherentes con lo implementado.
 
-4. Fusionar (merge) todas las ramas pendientes a `main` antes del cierre de la Semana académica 7.
+4. Fusionar (merge) todas las ramas pendientes a `main` antes del cierre de la Entrega 1.
 
 5. `CHANGELOG.md` actualizado (entrada final de la Entrega 1).
 
@@ -245,13 +218,13 @@ tests/entrega1/
 ---
 
 ## ENTREGA 2 — Consultas Avanzadas, Perfección del Modelo y Roles
-### Semanas académicas 9 a 12 — 4 semanas de trabajo
+### 4 semanas de trabajo
 
 A partir de esta entrega, el equipo trabaja sobre su propio modelo ampliado (ya no el modelo de 5 entidades del servidor del curso), incorporando las entidades identificadas en la Evaluación Crítica de la Entrega 1 y en las reglas de negocio del enunciado (sección 7).
 
 ---
 
-### Semana 1 de la entrega (Semana académica 9)
+### Semana 1 de la entrega
 
 **Entregables:**
 
@@ -281,7 +254,7 @@ tests/entrega2/
 
 ---
 
-### Semana 2 de la entrega (Semana académica 10)
+### Semana 2 de la entrega
 
 **Entregables:**
 
@@ -317,7 +290,7 @@ tests/entrega2/
 
 ---
 
-### Semana 3 de la entrega (Semana académica 11)
+### Semana 3 de la entrega
 
 **Entregables:**
 
@@ -352,7 +325,7 @@ tests/entrega2/
 
 ---
 
-### Semana 4 de la entrega (Semana académica 12)
+### Semana 4 de la entrega (cierre de Entrega 2)
 
 **Entregables:**
 
@@ -366,7 +339,7 @@ tests/entrega2/
 3. `tests/entrega2/casos_prueba.md`
    - Casos de prueba exitosos y fallidos, cada uno con la operación ejecutada y el resultado obtenido.
 
-4. Fusionar (merge) todas las ramas pendientes a `main` antes del cierre de la Semana académica 12.
+4. Fusionar (merge) todas las ramas pendientes a `main` antes del cierre de la Entrega 2.
 
 5. `CHANGELOG.md` actualizado (entrada final de la Entrega 2).
 
@@ -398,11 +371,11 @@ tests/entrega2/
 ---
 
 ## ENTREGA 3 — Programación en Base de Datos y Aplicación
-### Semanas académicas 14 a 16 — 3 semanas de trabajo
+### 3 semanas de trabajo
 
 ---
 
-### Semana 1 de la entrega (Semana académica 14)
+### Semana 1 de la entrega
 
 **Entregables:**
 
@@ -444,7 +417,7 @@ app/
 
 ---
 
-### Semana 2 de la entrega (Semana académica 15)
+### Semana 2 de la entrega
 
 **Entregables:**
 
@@ -482,7 +455,7 @@ app/
 
 ---
 
-### Semana 3 de la entrega (Semana académica 16)
+### Semana 3 de la entrega (cierre de Entrega 3)
 
 **Entregables:**
 
@@ -496,7 +469,7 @@ app/
    - Resultados agregados por selección, grupo y fase.
    - Indicadores básicos: goleadores, tabla de posiciones, incidencias.
 
-3. Fusionar (merge) todas las ramas pendientes a `main` antes del cierre de la Semana académica 16.
+3. Fusionar (merge) todas las ramas pendientes a `main` antes del cierre de la Entrega 3.
 
 4. `CHANGELOG.md` actualizado (entrada final de la Entrega 3).
 
